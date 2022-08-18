@@ -11,12 +11,20 @@
   + **test.csv**: using model trained with **train.csv** to predict prices of 1459 houses in this file.
   + **sample.csv**: include the format for our submission and sample results
 
-## Approach
+## Code:
+https://colab.research.google.com/drive/1lbmSpA0KSon8F_oVR2Q0Hd84cGwOFZ03#scrollTo=rOanmB0Feen5
 
-- Data cleaning:
-  + Eleminate column that don't affect house prices (having the same value or null with all rows)
-  + Numberic values (in case the value is null, replace it with 0)
-  + Create new variables which could possibly be associated with our outcome
-  
-- Data exploration:
+## Score review
+| Model      | Score |
+| ----------- | ----------- |
+| Random Fores Regressor     | 0.14676       |
+| Ridge   | 0.13691        |
+| Gradient Boosting Regressor   | 0.13331        |
+| BayesianRidge   | 0.13288        |
+| LGBM egressor   | 0.13148        |
+| Cat Boost Regressor   | 0.12458       |
+| Mix model (0.25 - 0.1 - 0.1 - 0.25 - 0.3)   | 0.12446        |
+| Mix model (0.2 - 0.2 - 0.2 - 0.2 - 0.2)   | 0.12443        |
+
+
   
